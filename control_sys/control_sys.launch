@@ -1,0 +1,9 @@
+<launch>
+	<node name="gpio"          pkg="control_sys"   type="gpio.sh" />
+	<node name="imu"           pkg="control_sys"   type="imu" />
+	<node name="filter"        pkg="control_sys"   type="filter" /> 
+	<node name="ultrasonic"    pkg="control_sys"   type="ultra" />
+	<node name="angle_cont"    pkg="control_sys"   type="angle_cont" />
+	<node name="mixer"         pkg="control_sys"   type="mixer" />
+	<node name="motor"         pkg="control_sys"   type="motor" />
+</launch>
