@@ -63,7 +63,7 @@ public:
 			return;	
 }	
 		
-		throttle_cmd = throttle_bias + msg.quat.w * z_mixer; 
+		throttle_cmd = throttle_bias - msg.quat.w * z_mixer; 
 		// Contribution of roll, pitch and yaw to motor commands
 		roll_cont = (msg.quat.x - msg.vel.x) * roll_p * roll_mixer;
 		pitch_cont = (msg.quat.y - msg.vel.y) * pitch_p * pitch_mixer;
